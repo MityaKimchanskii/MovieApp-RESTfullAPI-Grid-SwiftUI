@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MovieApp_Grid_SwiftUIApp: App {
+    
+    @State var store = MovieStore()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: store)
         }
     }
 }
